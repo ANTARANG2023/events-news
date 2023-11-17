@@ -1,5 +1,5 @@
 // Initialize FullCalendar
-const calendarEl = document.getElementById('calendar');
+/*const calendarEl = document.getElementById('calendar');
 const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
     events: [
@@ -20,4 +20,5 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
             ticketLink: 'https://example.com/event2tickets'
         }
     ]
-});
+});*/
+

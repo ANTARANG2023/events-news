@@ -6,10 +6,11 @@
     <title>College Community Hub</title>
 
     <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-    <header>
+   <!--<header>
         <div class="logo">
             <img src="campusverse-logo-re.png" alt="College Logo">
         </div>
@@ -75,6 +76,114 @@
     <footer>
         <p>&copy; 2023 College Name</p>
         <p>All rights reserved.</p>
+    </footer>-->
+    <nav class="navbar  fixed-top navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" >CAMPUSVERSE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">EVENTS</a>
+              <a class="nav-link active" href="#">NEWS</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1647237356.webp" class="img-fluid imgthumb" alt="...">
+      <div class="container-fluid events">
+        <div class="eventscontent">
+        <h1 class="eventsheading">Events</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sequi vitae rerum ab iure qui temporibus ex aliquid. Placeat, fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sequi vitae rerum ab iure qui temporibus ex aliquid. Placeat, fugiat?</p>
+        </div>
+        <img src="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/news/2019-01/Pic4Day1.jpeg" class="eventsimg" alt="...">
+      </div>
+      <h1>CALENDER</h1>
+      <button class="btn btn-outline-primary btn-lg">View Calender</button>
+      <div class=" container-fluid events-info">
+        <table class="table table-striped table-hover">
+            <thead>Events Information</thead>
+            <tbody>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Location</th>
+              <tr>
+                <td>Mood Indigo</td>
+                <td>20/11/2023</td>
+                <td>10:00 AM</td>
+                <td>Location 1,IIT BOMBAY,Bandra,Mumbai,INDIA</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <h1 class="newsheading">News</h1>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.ytimg.com/vi/F21g4999_bw/maxresdefault.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cineblues.com/uploads/article/iit-bomay-2-20221219161925384.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/01/28/a7b6831b70fdf2a348b313c9f1c01839_original.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1>Events Form</h1>
+      <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputName">Name</label>
+          <input type="text" class="form-control" id="specificSizeInputName" placeholder="Joyastu Ray">
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Instagram Username">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeSelect">No.of pass to be issued</label>
+          <select class="form-select" id="specificSizeSelect">
+            <option selected>No. of passes</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+            <label class="form-check-label" for="autoSizingCheck2">
+              I agree with the terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <footer class="container-fluid bg-dark footer">
+        <p>&copy; 2023 Campusverse All rights reserved</p>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
